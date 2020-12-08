@@ -1,4 +1,3 @@
-*.pyc
 *.pyd
 .idea
 .DS_Store
