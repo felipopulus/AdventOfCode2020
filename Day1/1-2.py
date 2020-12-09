@@ -2,7 +2,7 @@ from readInput import read_input
 from measureTime import measure_time
 from itertools import combinations
 
-str_input = read_input(day=1)
+str_input = read_input(day=1).splitlines()
 
 
 def multiply_values(values):

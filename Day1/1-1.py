@@ -1,8 +1,7 @@
 from readInput import read_input
 from measureTime import measure_time
 
-str_input = read_input(day=1)
-
+str_input = read_input(day=1).splitlines()
 
 @measure_time
 def solution():

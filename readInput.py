@@ -8,7 +8,7 @@ def read_input(day=1):
 
     if os.path.exists(file_path):
         with open(file_path, "r") as reader:
-            return reader.read().splitlines()
+            return reader.read()
     else:
         url_path = "https://adventofcode.com/2020/day/{}/input".format(day)
         return urllib2.urlopen(url_path)
