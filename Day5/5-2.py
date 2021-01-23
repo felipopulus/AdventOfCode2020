@@ -1,11 +1,11 @@
 from readInput import read_input
 from measureTime import measure_time
 
-str_input = read_input(day=5).splitlines()
+lines = read_input(day=5).splitlines()
 
 
 def get_seat_ids():
-    for each_input in str_input:
+    for each_input in lines:
         binary_map = []
         for each_char in each_input:
             binary_map.append("1" if each_char in "BR" else "0")

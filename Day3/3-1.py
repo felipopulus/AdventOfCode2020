@@ -1,7 +1,7 @@
 from readInput import read_input
 from measureTime import measure_time
 
-str_input = read_input(day=3).splitlines()
+lines = read_input(day=3).splitlines()
 
 
 class Coordinates(object):
@@ -21,7 +21,7 @@ class Coordinates(object):
 
 def get_item_at(coord):
     map_x = coord.x % 31
-    return str_input[coord.y][map_x]
+    return lines[coord.y][map_x]
 
 
 @measure_time
@@ -29,7 +29,7 @@ def solution():
     slope = Coordinates(3, 1)
 
     count = 0
-    for index in range(1, len(str_input)):
+    for index in range(1, len(lines)):
         current_position = slope * index
         tree_or_snow = get_item_at(current_position)
         if tree_or_snow == "#":

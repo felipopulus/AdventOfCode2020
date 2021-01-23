@@ -11,4 +11,5 @@ def read_input(day=1):
             return reader.read()
     else:
         url_path = "https://adventofcode.com/2020/day/{}/input".format(day)
+        print url_path
         return urllib2.urlopen(url_path)
